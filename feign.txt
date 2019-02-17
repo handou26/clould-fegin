@@ -1,0 +1,13 @@
+feign是自带断路器的（hystrix） 防止应用雪崩
+feign是自带负载均衡（ribbon）   负载均衡
+
+hystrix 参考文档
+https://www.cnblogs.com/gaoyanqing/p/7470085.html
+
+断路器界面：http://localhost:8000/hystrix/
+
+          http://localhost:8000/hystrix.stream  
+          
+          http://turbine-hostname:port/turbine.stream （所有集群） 
+		  http://turbine-hostname:port/turbine.stream?cluster=[clusterName]（指定名称的集群） 
+		  http://hystrix-app:port/hystrix.stream（单个应用）
